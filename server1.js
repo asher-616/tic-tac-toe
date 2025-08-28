@@ -83,7 +83,6 @@ io.on('connection', (socket) => {
         console.log(`Spectator joined: ${socket.id}`);
     }
 
-    // --- THIS IS THE FIX ---
     // If this connection identifies as a server, revoke its player role.
     socket.on('registerServer', () => {
         console.log(`Secondary server registered: ${socket.id}`);

@@ -65,7 +65,6 @@ function render(state) {
 }
 
 // --- User Input Handling ---
-// --- FIXED: Function now accepts the 'winner' variable ---
 function promptForMove(winner) {
     // For winners, myTurn is false, so we need a separate check to allow the 'reset' command
     const canReset = !!currentBoard.some(s => s) || !!winner;
